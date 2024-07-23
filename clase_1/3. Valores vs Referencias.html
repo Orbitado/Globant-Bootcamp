@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+
+  /* !! ESTE HTML DEBE ABRIRSE EN EL NAVEGADOR PARA VISUALIZARSE, ES UN MAPA MENTAL DE LAS VARIABLES VS REFERENCIAS DEL VIDEO
+  https://www.youtube.com/watch?v=AvkyOrWkuQc&list=PLfWyZ8S-XzecAttp3QU-gBBXvMqEZTQXB&index=4 !! */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:O,mm:h}=window,M=new O.Toolbar;M.attach(h);const re=M.render();re.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(re)})})()</script><script>((i,L,f,o)=>{const w=i();window.mm=w.Markmap.create("svg#mindmap",(L||w.deriveOptions)(o),f)})(()=>window.markmap,null,{"content":"","children":[{"content":"Variables en JavaScript","children":[{"content":"Variables con valores primitivos","children":[{"content":"Al declarar una variable y asignarle un valor, se guarda ese valor en un contenedor en memoria.","children":[],"payload":{"lines":"2,3"}},{"content":"Cambiar el valor de una variable reemplaza el valor anterior.","children":[],"payload":{"lines":"3,4"}},{"content":"Asignar el valor de una variable a otra crea una copia independiente.","children":[],"payload":{"lines":"4,5"}}],"payload":{"lines":"1,5"}},{"content":"Variables que apuntan a objetos","children":[{"content":"En JavaScript, los objetos son referenciados en lugar de copiados.","children":[],"payload":{"lines":"6,7"}},{"content":"Asignar un objeto a una variable crea una referencia a su ubicación en memoria.","children":[],"payload":{"lines":"7,8"}},{"content":"Modificar el objeto a través de una variable modifica el objeto subyacente.","children":[],"payload":{"lines":"8,9"}},{"content":"Independencia y vínculos entre variables que apuntan al mismo objeto.","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"5,10"}},{"content":"Funciones y parámetros","children":[{"content":"Al pasar variables primitivas como parámetros, se copia su valor.","children":[],"payload":{"lines":"11,12"}},{"content":"Al pasar objetos como parámetros, se pasa la referencia al objeto.","children":[],"payload":{"lines":"12,13"}},{"content":"El alcance de las variables dentro de las funciones.","children":[],"payload":{"lines":"13,14"}},{"content":"La finalización de funciones y la eliminación de variables locales.","children":[],"payload":{"lines":"14,15"}}],"payload":{"lines":"10,15"}}],"payload":{"lines":"0,15"}},{"content":"Conclusiones","children":[{"content":"Importancia de entender valores y referencias","children":[{"content":"Evitar errores comunes relacionados con la manipulación de variables.","children":[],"payload":{"lines":"17,18"}},{"content":"Comprender cómo JavaScript gestiona la asignación y el paso de valores.","children":[],"payload":{"lines":"18,20"}}],"payload":{"lines":"16,20"}}],"payload":{"lines":"15,20"}}],"payload":{"lines":"0,20"}},null)</script>
+</body>
+</html>
